@@ -1,0 +1,222 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.PaiDeTodos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h1 {
+    font-size: large;
+    margin: 0 0 10px;
+    text-align: center;
+}
+
+.versus {
+    margin: 0 15px 0 15px;
+    color: red;
+}
+
+
+#computadorPedra,
+#computadorPapel,
+#computadorTesoura {
+    transform: rotate(180deg);
+    width: 200px;
+    height: 350px;
+}
+
+#computador {
+    width: 70px;
+    height: 200px;
+}
+
+#computadorPedra {
+    display: none;
+}
+
+#computadorPapel {
+    display: none;
+}
+
+#computadorTesoura {
+    display: none;
+}
+
+
+#jogadorPedra,
+#jogadorPapel,
+#jogadorTesoura {
+    width: 200px;
+    height: 350px;
+}
+
+#jogador {
+    width: 70px;
+    height: 200px;
+    transform: rotateY(180deg);
+}
+
+#jogadorPedra {
+    display: none;
+}
+
+#jogadorPapel {
+    display: none;
+}
+
+#jogadorTesoura {
+    display: none;
+}
+
+#botoesJogador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#botoesJogador button {
+    background-color: #f2f2f2;
+    border: 2px solid transparent;
+}
+
+.botoesJogador__items {
+    opacity: 0.5;
+    cursor: pointer;
+    width: 25px;
+}
+
+.botoesJogador__items--semHover {
+    opacity: 0.5;
+    cursor: auto;
+    width: 25px;
+}
+
+.botoesJogador__items:hover {
+    opacity: 1;
+}
+
+
+
+#botoesComputador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#botoesComputador button {
+    background-color: #f2f2f2;
+    border: 2px solid transparent;
+}
+
+.botoesComputador__items {
+    opacity: 0.5;
+    margin: 0 10px 0 10px;
+    width: 25px;
+}
+
+
+#botaoJogar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f2f2f2;
+    justify-content: center;
+}
+
+.botaoResetar {
+    background-color: #f2f2f2;
+    display: none;
+    border: 2px solid transparent;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.botaoResetar:hover {
+    opacity: 1;
+}
+
+.resetar {
+    width: 25px;
+}
+
+.jogar {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    background-color: darkcyan;
+    color: rgb(195, 195, 195);
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    cursor: pointer;
+    width: auto;
+    opacity: 0.8;
+}
+
+.jogar:hover {
+    color: white;
+    opacity: 1;
+}
+
+.ativarButton {
+    opacity: 1;
+}
+
+.desativarButton {
+    opacity: 0.5;
+}
+
+.perdeu {
+    background-color: red;
+    color: white;
+    opacity: 1;
+}
+
+.ganhou {
+    background-color: green;
+    color: white;
+    opacity: 1;
+}
+
+.empatou {
+    background-color: grey;
+    color: white;
+    opacity: 1;
+}
+
+
+@media screen and (min-width:768px) {
+
+    #computador,
+    #jogador {
+        width: 250px;
+        height: 400px;
+    }
+
+    .botoesComputador__items,
+    .botoesJogador__items {
+        width: 45px;
+    }
+
+    .h1 {
+        font-size: 50px;
+    }
+
+    .versus {
+        font-size: 50px;
+    }
+
+    .jogar {
+        font-size: 40px;
+    }
+
+    .resetar {
+        width: 50px;
+    }
+}
